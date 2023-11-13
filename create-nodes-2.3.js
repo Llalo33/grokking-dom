@@ -18,7 +18,7 @@ function render(words) {
     for (let trueWords of words) {
         const li = document.createElement('li')
         const a = document.createElement('a')
-        a.innerText = trueWords.name
+        a.textContent = trueWords.name
         a.href = trueWords.url
         ul.appendChild(li)
         li.appendChild(a)
